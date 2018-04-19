@@ -1,0 +1,22 @@
+server:
+  port: 8082
+#in order to print the default h2 log info
+#logging:
+#  level:
+#    org:
+#      hibernate: DEBUG
+
+#http://localhost:8090/h2
+#try embedded server and url is jdbc:h2:mem:pocdb
+spring:
+  datasource:
+    url: jdbc:h2:mem:stockdb
+    driver-class-name: org.h2.Driver
+    username: root
+    password: 123456
+  h2:
+    console:
+      enabled: true 
+      path: /h2
+      settings:
+        web-allow-others: false

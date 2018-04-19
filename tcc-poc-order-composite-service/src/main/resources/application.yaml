@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+order:
+  service:
+    url: http://localhost:8081
+
+stock:
+  service:
+    url: http://localhost:8082
+
+tcc:
+  coordinator:
+    url : http://localhost:9090/coordinator/
+  transaction:
+    timeout : 1000
