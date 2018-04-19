@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>tcc-poc-parent</artifactId>
+        <groupId>com.brotherhui.tcc-poc</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>tcc-poc-order-composite-service</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.atomikos</groupId>
+            <artifactId>transactions-tcc-rest-api</artifactId>
+            <version>4.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.brotherhui.tcc-poc</groupId>
+            <artifactId>tcc-poc-participant-core</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
